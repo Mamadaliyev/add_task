@@ -1,10 +1,9 @@
-var cnt;
+var cnt=0;
 function Collapse2(){
     var a = document.getElementById('collapse');
     console.log(a.className);
     if(a.className === 'collapse-o'){
         a.setAttribute('class','collapse-c');
-        console.log('Salom');
     }
     else{
         a.setAttribute('class','collapse-o');
@@ -27,6 +26,7 @@ function add()
     ul.appendChild(node);
     document.getElementById('have').innerHTML = t;
     var percent = Math.trunc(cnt/t*100);
+    console.log(percent);
     document.getElementById('progress').style.width = percent + "%";
     document.getElementById('view').innerHTML = percent + "%";
 }
@@ -42,7 +42,6 @@ function calculate()
             cnt++;
     }
     var percent = Math.trunc(cnt/t*100);
-    var insert = document.getElementById('count');
     document.getElementById('progress').style.width = percent + "%";
     document.getElementById('view').innerHTML = percent + "%";  
     document.getElementById('complete').innerHTML = cnt;
