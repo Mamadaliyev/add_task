@@ -1,0 +1,65 @@
+body .container .row .col-lg-6 .card .card-header,
+body .container .row .col-12 .card .card-header {
+  background-color: #17a2b8;
+}
+body .container .row .col-lg-6 .card .card-header button,
+body .container .row .col-12 .card .card-header button {
+  outline: none !important;
+  color: white;
+}
+body .container .row .col-lg-6 .card .card-header button:hover,
+body .container .row .col-12 .card .card-header button:hover {
+  box-shadow: none;
+}
+body .container .row .col-lg-6 .card .card-header button:hover,
+body .container .row .col-12 .card .card-header button:hover {
+  cursor: pointer;
+}
+body .container .row .col-lg-6 .card .card-body .row .col-9 input,
+body .container .row .col-12 .card .card-body .row .col-9 input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+body .container .row .col-lg-6 .card .card-body .row .col-3 button,
+body .container .row .col-12 .card .card-body .row .col-3 button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #17a2b8;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+body .container .row .col-lg-6 .card .card-body .row .col-12 ul,
+body .container .row .col-12 .card .card-body .row .col-12 ul {
+  margin-top: 30px;
+}
+body .container .row .col-lg-6 .card .card-body .row .col-12 ul li,
+body .container .row .col-12 .card .card-body .row .col-12 ul li {
+  margin-top: -1px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  border-radius: 4px;
+}
+body .container .row .col-lg-6 .card .card-body .row .col-12 ul li span,
+body .container .row .col-12 .card .card-body .row .col-12 ul li span {
+  margin-left: 5px;
+}
+body .container .row .col-lg-6 .card .card-footer .bage,
+body .container .row .col-12 .card .card-footer .bage {
+  border-radius: 3px !important;
+}
+
+.collapse-o {
+  max-height: 100%;
+  overflow: hidden;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+.collapse-c {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+/*# sourceMappingURL=style.css.map */
