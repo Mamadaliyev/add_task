@@ -1,3 +1,4 @@
+var cnt;
 function Collapse2(){
     var a = document.getElementById('collapse');
     console.log(a.className);
@@ -25,11 +26,15 @@ function add()
     var ul = document.getElementById('ul_list');
     ul.appendChild(node);
     document.getElementById('have').innerHTML = t;
+    var percent = cnt/t*100;
+    document.getElementById('progress').style.width = percent + "%";
+    document.getElementById('view').innerHTML = percent + "%";
+    document.getElementById('complete').innerHTML = cnt;
 }
 var s=0;
 function calculate()
 {
-    var cnt=0;
+    cnt=0;
     for(i = 1; i <= t; ++ i)
     {
         var id = "task"+i;
