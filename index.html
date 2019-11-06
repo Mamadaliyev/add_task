@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-12 offset-lg-3">
+          <div class="card">
+            <div class="card-header">
+              <button class="btn" onclick="Collapse2()"><i class="fas fa-bars"></i><span> Task management</span></button>
+            </div>
+            <div id="collapse" class="collapse-o">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-9 pr-0 mr-0">
+                    <input id="taskname" class="form-control" type="text" placeholder="Enter task name .."/>
+                  </div>
+                  <div class="col-3 pl-0 ml-0">
+                    <button onclick="add()" class="w-100 btn btn-success">
+                      <i class="fas fa-plus"></i> Add</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <ul class="list-unstyled" id="ul_list">
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+            <div class="progress">
+              <div id="progress" class="progress-bar progress-bar-striped" style="width: 0%;">
+                <span id="view" style="color: white;">0%</span>
+              </div>
+            </div>
+              <h6 id="count" class="font-weight-bold mt-4">You have <span id="have" class="bage badge-info py-0 px-1">0</span> tasks. <span id="complete" class="bage badge-success px-1 py-0">0</span> completed.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/main.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</html>
